@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gezenthi Currency Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>Gezenthi Currency Converter</header>
+        <form id="form" action="#">
+            <div class="amount">
+                <p>Amount to Convert:</p>
+                <input type="text" class="amount-to-convert-input" value="1">
+            </div>
+            <div class="drop-list">
+                <div class="from">
+                    <p>From:</p>
+                    <div class="options-div">
+                        <img src="https://flagcdn.com/h20/eur.png" alt="flag">
+                        <select></select>
+                    </div>
+                </div>
+                <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                <div class="to">
+                    <p>To:</p>
+                    <div class="options-div">
+                        <img src="https://flagcdn.com/h20/tr.png" alt="flag">
+                        <select></select>
+                    </div>
+                </div>
+            </div>
+            <div class="exchange-rate">Getting Exchange Rate...</div>
+            <button type="submit">Convert</button>
+            <button id="reset" onclick="clearVal()">Reset</button>
+        </form>
+
+        <footer>
+            <p>&copy; 2024 Gezenthi Travel Agency. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
